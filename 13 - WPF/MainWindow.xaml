@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:_13___WPF"
         mc:Ignorable="d"
         Title="My first GUI" Height="350" Width="525">
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
