@@ -5,21 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_13___WPF"
         mc:Ignorable="d"
-        Title="My first GUI" Height="450" Width="800">
-    <!-- XAML -> Extensible Application Markup Language -->
-    <Grid>
-        <!-- 
-        <Button>
-            <Button.Width>200</Button.Width>
-            <Button.Height>100</Button.Height>
-            <Button.FontSize>24</Button.FontSize>
-            <Button.Content>
-                <WrapPanel>
-                    <TextBlock Foreground="Blue">Multi</TextBlock>
-                    <TextBlock Foreground="red">Color</TextBlock>
-                    <TextBlock Foreground="black">Button</TextBlock>
-                </WrapPanel>
-            </Button.Content>
-        </Button> -->
-    </Grid>
+        Title="My first GUI" Height="350" Width="525">
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" Margin="20">Hello World!</TextBlock>
+
+        <ListBox Height="100" Width="100">
+            <ListBoxItem Content="Item 1"/>
+            <ListBoxItem Content="Item 2"/>
+            <ListBoxItem Content="Item 3"/>
+        </ListBox>
+
+        <Button Content="Click me" Click="Button_Click" Margin="20"></Button>
+        
+    </StackPanel>
 </Window>

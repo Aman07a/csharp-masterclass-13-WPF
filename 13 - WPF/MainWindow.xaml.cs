@@ -20,35 +20,40 @@ namespace _13___WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Thanks for clicking");
+        }
+
         public MainWindow()
         {
             InitializeComponent();
 
-            Grid grid = new Grid();
-            this.Content = grid;
-            Button btn = new Button();
-            btn.Width = 150;
-            btn.Height = 100;
-            btn.FontSize = 26;
+            // Grid grid = new Grid();
+            // this.Content = grid;
+            // Button btn = new Button();
+            // btn.Width = 150;
+            // btn.Height = 100;
+            // btn.FontSize = 26;
 
-            WrapPanel wrapPanel = new WrapPanel();
-            TextBlock txt = new TextBlock();
-            txt.Text = "Multi";
-            txt.Foreground = Brushes.Blue;
-            wrapPanel.Children.Add(txt);
+            // WrapPanel wrapPanel = new WrapPanel();
+            // TextBlock txt = new TextBlock();
+            // txt.Text = "Multi";
+            // txt.Foreground = Brushes.Blue;
+            // wrapPanel.Children.Add(txt);
 
-            txt = new TextBlock();
-            txt.Text = "Color";
-            txt.Foreground = Brushes.Red;
-            wrapPanel.Children.Add(txt);
+            // txt = new TextBlock();
+            // txt.Text = "Color";
+            // txt.Foreground = Brushes.Red;
+            // wrapPanel.Children.Add(txt);
 
-            txt = new TextBlock();
-            txt.Text = "Button";
-            txt.Foreground = Brushes.Black;
-            wrapPanel.Children.Add(txt);
+            // txt = new TextBlock();
+            // txt.Text = "Button";
+            // txt.Foreground = Brushes.Black;
+            // wrapPanel.Children.Add(txt);
 
-            btn.Content = wrapPanel;
-            grid.Children.Add(btn);
+            // btn.Content = wrapPanel;
+            // grid.Children.Add(btn);
         }
     }
 }
