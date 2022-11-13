@@ -8,15 +8,17 @@
         Title="My first GUI" Height="350" Width="525">
 
     <StackPanel>
-        <ComboBox Name="comboBoxColors">
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Rectangle Fill="{Binding Name}" Width="32" Height="32" Margin="5"></Rectangle>
-                        <TextBlock Text="{Binding Name}" FontSize="32"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
+        <Label FontWeight="Bold">Pizza Toppings</Label>
+        <CheckBox Name="cbAllToppings" IsThreeState="True" Checked="cbAllCheckedChanged" Unchecked="cbAllCheckedChanged">Add all</CheckBox>
+        <StackPanel Margin="10">
+            <CheckBox Name="cbSalami" Checked="cbSingleCheckedChanged" Unchecked="cbSingleCheckedChanged">
+                <TextBlock>
+                    Salami <Run Foreground="Red" FontWeight="Bold">Spicy</Run>
+                </TextBlock>
+            </CheckBox>
+
+            <CheckBox Name="cbMushrooms" Checked="cbSingleCheckedChanged" Unchecked="cbSingleCheckedChanged">Mushrooms</CheckBox>
+            <CheckBox Name="cbMozzarella" Checked="cbSingleCheckedChanged" Unchecked="cbSingleCheckedChanged">Mozzarella</CheckBox>
+        </StackPanel>
     </StackPanel>
 </Window>
