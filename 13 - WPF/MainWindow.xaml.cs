@@ -25,26 +25,5 @@ namespace _13___WPF
         {
             InitializeComponent();
         }
-
-        private void cbAllCheckedChanged(object sender, RoutedEventArgs e)
-        {
-            bool newVal = (cbAllToppings.IsChecked == true);
-            cbSalami.IsChecked = newVal;
-            cbMozzarella.IsChecked = newVal;
-            cbMushrooms.IsChecked = newVal;
-        }
-
-        private void cbSingleCheckedChanged(object sender, RoutedEventArgs e)
-        {
-            cbAllToppings.IsChecked = null;
-            if ((cbSalami.IsChecked == true) && (cbMozzarella.IsChecked == true) && (cbMushrooms.IsChecked == true))
-            {
-                cbAllToppings.IsChecked = true;
-            }
-            if ((cbSalami.IsChecked == false) && (cbMozzarella.IsChecked == false) && (cbMushrooms.IsChecked == false))
-            {
-                cbAllToppings.IsChecked = false;
-            }
-        }
     }
 }
